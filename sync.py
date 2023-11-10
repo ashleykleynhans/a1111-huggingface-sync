@@ -45,7 +45,8 @@ if __name__ == '__main__':
             uri = api.hf_hub_download(
                 repo_id=args.repo_id,
                 filename=model,
-                local_dir=sync_path
+                local_dir=sync_path,
+                local_dir_use_symlinks=False
             )
 
             if uri:
