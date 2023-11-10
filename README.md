@@ -22,6 +22,7 @@ python3 upload.py model.safetensors Stable-diffusion/model.safetensors ashleykle
 ## Sync models from Huggingface
 
 ```bash
+export HF_HUB_CACHE="/workspace/.cache/huggingface/hub"
 export HF_TOKEN="hf_xxxxxxxxxxxxxxxxxxxxxxxx"
-./sync.py ashleykleynhans/a1111-models /workspace/stable-diffusion-webui/models
+python3 sync.py ashleykleynhans/a1111-models /workspace/stable-diffusion-webui/models
 ```
